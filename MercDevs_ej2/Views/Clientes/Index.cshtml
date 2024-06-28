@@ -30,7 +30,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.Estado)
             </th>
-            <th></th>
+            <th>
+                Listar todos los servicios
+            </th>
+            <th>
+                Acciones
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -53,6 +58,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                    <a asp-controller="Recepcionequipoes" asp-action="FichaTecnica" asp-route-clienteId="@item.IdCliente"><button type="button" class="btn btn-outline-success">Ficha Tecnica</button></a>
             </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.IdCliente"><button type="button" class="btn btn-outline-primary">Editar</button></a>

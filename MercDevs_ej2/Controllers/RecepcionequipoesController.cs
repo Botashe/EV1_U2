@@ -126,6 +126,19 @@ namespace MercDevs_ej2.Controllers
             return View(equiposRecepcionados);
         }
 
+        public async Task<IActionResult> FichaTecnica(int clienteId)
+        {
+            var fichaTecnica = await _context.Recepcionequipos
+                .FirstOrDefaultAsync(ft => ft.IdCliente == clienteId);
+
+            if (fichaTecnica == null)
+            {
+                return NotFound(); 
+            }
+
+            return View(fichaTecnica);
+        }
+
         // GET: Recepcionequipoes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
