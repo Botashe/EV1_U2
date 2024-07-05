@@ -27,6 +27,17 @@ namespace MercDevs_ej2.Controllers
             return View(await mercydevsEjercicio2Context.ToListAsync());
         }
 
+        public IActionResult FichaTecnica(int idRecepcionEquipo)
+        {
+            // Aquí puedes agregar lógica para obtener la ficha técnica basada en idRecepcionEquipo
+            // Por ejemplo, podrías cargar los datos necesarios desde la base de datos.
+
+            // Supongamos que pasas la idRecepcionEquipo a la vista para mostrarla
+            ViewBag.IdRecepcionEquipo = idRecepcionEquipo;
+
+            return View();
+        }
+
         // POST: Recepcionequipoes/FinalizarServicio/5
         [HttpPost]
         [ValidateAntiForgeryToken]

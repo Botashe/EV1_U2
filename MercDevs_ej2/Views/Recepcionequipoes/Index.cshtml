@@ -30,7 +30,12 @@
             <th>
                Servicio    
             </th>
-            <th>Acciones</th>
+            <th>
+               Listar todos los servicios
+            </th>
+            <th>Acciones
+
+            </th>
         </tr>
     </thead>
     <tbody style="text-align">
@@ -54,11 +59,13 @@
             <td>
                 @Html.DisplayFor(modelItem => item.IdServicioNavigation.IdServicio)
             </td>
+            <td>
+                <a asp-controller="Recepcionequipoes" asp-action="FichaTecnica"><button type="button" class="btn btn-outline-success">Ficha Tecnica</button></a>
+            </td>
                 <td class="d-flex justify-content-around" >
                     <a asp-action="Edit" asp-route-id="@item.Id"><button type="button" class="btn btn-outline-primary" style="width:100%">Editar</button></a>
                     <a asp-action="Details" asp-route-id="@item.Id"><button type="button" class="btn btn-outline-warning" style="width:100%">Detalles</button></a> 
                     <a asp-action="Delete" asp-route-id="@item.Id"><button type="button" class="btn btn-outline-danger" style="width:100%">Borrar</button></a>
-                    <a asp-controller="Recepcionequipoes" asp-action="FichaTecnica"><button type="button" class="btn btn-outline-success">Ficha Tecnica</button></a>
                 </td>
         </tr>
 }

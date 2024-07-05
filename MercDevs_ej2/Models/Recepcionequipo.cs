@@ -35,6 +35,8 @@ public partial class Recepcionequipo
 
     public int Estado { get; set; }
 
+    public virtual ICollection<Datosfichatecnica> Datosfichatecnicas { get; set; } = new List<Datosfichatecnica>();
+
     public virtual Cliente IdClienteNavigation { get; set; } = null!;
 
     public virtual Servicio IdServicioNavigation { get; set; } = null!;
