@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
+using MercDevs_ej2.Models;
 
 namespace MercDevs_ej2.Models;
 
@@ -162,4 +163,8 @@ public partial class MercydevsEjercicio2Context : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+public DbSet<MercDevs_ej2.Models.Datosfichatecnica> Datosfichatecnica { get; set; } = default!;
+
+public DbSet<Diagnosticosolucion> Diagnosticosolucion { get; set; } = default!;
 }

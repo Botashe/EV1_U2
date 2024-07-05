@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MercDevs_ej2.Models
 {
@@ -23,6 +24,7 @@ namespace MercDevs_ej2.Models
 
         public int? NavegadorWebInstalado { get; set; }
 
+        [Column("Antivirus Instalado")] // Especifica el nombre exacto de la columna en la base de datos
         public string? AntivirusInstalado { get; set; }
 
         public int RecepcionEquipoId { get; set; }
