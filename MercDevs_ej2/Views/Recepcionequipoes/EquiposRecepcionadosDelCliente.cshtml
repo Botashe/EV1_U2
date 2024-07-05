@@ -14,6 +14,7 @@
             <th>Modelo PC</th>
             <th>Estado</th>
             <th>Cliente</th>
+            <th>Listar todos los servicios</th>
             <th>Servicio</th>
             <th>Acciones</th>
         </tr>
@@ -27,6 +28,7 @@
                 <td>@Html.DisplayFor(modelItem => equipo.ModeloPc)</td>
                 <td>@Html.DisplayFor(modelItem => equipo.Estado)</td>
                 <td>@Html.DisplayFor(modelItem => equipo.IdClienteNavigation.Nombre)</td>
+                <td><a asp-controller="Recepcionequipoes" asp-action="FichaTecnica"><button type="button" class="btn btn-outline-success">Ficha Tecnica</button></a></td>
                 <td><a asp-action="Details" asp-route-id="@equipo.Id" class="btn btn-outline-warning btn-sm">Detalles</a></td>
                 <td>
                     @if (equipo.Estado == 1)

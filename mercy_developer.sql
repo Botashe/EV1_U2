@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-06-2024 a las 04:42:41
+-- Tiempo de generación: 05-07-2024 a las 02:37:06
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -94,7 +94,7 @@ CREATE TABLE `recepcionequipo` (
 --
 
 INSERT INTO `recepcionequipo` (`id`, `IdCliente`, `IdServicio`, `Fecha`, `TipoPc`, `Accesorio`, `MarcaPc`, `ModeloPc`, `NSerie`, `CapacidadRam`, `TipoAlmacenamiento`, `CapacidadAlmacenamiento`, `TipoGpu`, `Grafico`, `Estado`) VALUES
-(1, 1, 1, '2024-06-19 19:10:00', 1, 'si', 'si', 'si', 'si', 1, 1, 'parece', 1, 'parece', 1),
+(1, 1, 1, '2024-06-19 19:10:00', 1, 'si', 'si', 'si', 'si', 1, 1, 'parece', 1, 'parece', 0),
 (2, 1, 1, '2024-06-19 19:10:00', 2, 'si', 'si', 'no', 'no', 2, 1, 'parece', 1, '???', 0),
 (4, 1, 2, '2024-06-19 19:51:00', 1, '1', '1', '1', '1', 1, 1, '1', 1, '1', 1),
 (5, 2, 2, '2024-06-19 19:57:00', 1, 'si', 'si', 'si', 'si', 2, 2, 'parece', 2, '???', 1);
